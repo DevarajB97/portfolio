@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABDlBMVEUAAAAvrv8urv8AAP8AHP8AlP8vr/8wr/8xr/8Alv8ABf8AUv8wrv8vrv8xr/9Btv9Gt/8yr/8yr/8rrf8srf8trf8xr/8rrf8prP8rrf8srf8ysP8zsP8prP8qrP8srf8zsP8srf8qrP8srf8wr/8rrf8wr/8srf8rrf8zsP80sP8srf8rrf8prP8zsP8srf8prP8prP8ysP8qrP8rrf8srf8prP8qrP8srf8ysP8rrf8rrf8zsP8srf8prP8qrP8wrv8rrf8vrv8qrP8rrf8yr/8srf8vrv8yr/8srf8xr/8trf8rrf8prP8rrf8srf8prP8rrf8srf8trf8rrf8wr/8yr/8zsP8prP////8YWgBvAAAAWHRSTlMAAAAAAAAAAAAAAAAACikBASkGfZCQBnn6mZgGBvfoTAxL51IToRRRegcHeaL+CIj27Q7siY74600Pp44Jf/nkFagV44AJgBYIRw9Hf/uYl/yDkpGECy0ta7TzOwAAAAFiS0dEWZqy9BgAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfmCR4QKQWZFdj2AAAAxUlEQVQY023P1xbBQBQF0KuO3okWITqZ0YMg0Xuv+f8vMbMWnpy3fV7OvQD/YnB7vD6/2/hzIBgymcPBiOHjCBeNWSzxKJewMluTHJ8S0umMyHNJBICoxWwuny8URb5URlCpMksYSznWEKjVG9mmhHUdS81iq96Gjtzt9RWdRukLXXkAw5GqCWMF48lUmKnzBdjIkjYrZbLKaOp8TWdsZCRrm+12R00QOwSR/eFot5/OH7PmcnU4b/evAVyPp9f3eqC/n78B1bUeGmPNQ0sAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMDktMzBUMTY6NDE6MDErMDA6MDBrk0SIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTA5LTMwVDE2OjQxOjAxKzAwOjAwGs78NAAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxOTJAXXFVAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTY2NDU1NjA2Maw0hPgAAAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAyMi0wOS0zMC9jZmViYjg2MDRjYjA2ZTFlOGEzOTU2ZjhkMmJlNTY3OS5pY28ucG5nHkpjTgAAAABJRU5ErkJggg==" type="image/x-icon" />
+  
+  <script src="/main.js" defer></script>
+  <title>Raj.Dev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white dark:bg-gray-800 md:mx-48 scrollbar-hide ">
+  <!-- Header start -->
+  <nav>
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex">
+
+          <!-- Website Logo -->
+          <a href="#" class="flex items-center py-4 px-2">
+            <img src="/dist/assets/logo.2f75a4b7.png" alt="Logo" class="h-8 w-8 mr-2">
+            <span class="font-semibold text-black text-xl uppercase dark:text-white">Raj.Dev</span>
+          </a>
+
+          <!-- Primary Navbar items -->
+          <div
+            class="ml-96 hidden md:flex md:justify-between  items-center cursor-pointer text-lg text-black dark:text-white">
+            <a href="#education" class="mr-8 hover:text-gray-400 dark:hover:text-gray-500">Education</a>
+            <a href="#skills" class="mr-8 hover:text-gray-400  dark:hover:text-gray-500">Skills</a>
+            <a href="#intership" class="mr-8 hover:text-gray-400  dark:hover:text-gray-500">Intership/Projects</a>
+            <a href="#testimonial" class="mr-8 hover:text-gray-400  dark:hover:text-gray-500">Testimonials</a>
+            <a href="#contact" class="mr-8 hover:text-gray-400  dark:hover:text-gray-500">Contact</a>
+          </div>
+        </div>
+        <button id="theme-toggle" type="button" class="text-sm p-2.5 dark:text-white">
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+          </svg>
+        </button>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg class=" w-6 h-6 text-black dark:text-white" x-show="!showMenu" fill="none" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active"><a href="#education" 
+            class="block text-base px-2 py-4 text-black dark:text-white font-semibold">Education</a></li>
+        <li class="active"><a href="#skills"
+            class="block text-base px-2 py-4 text-black dark:text-white font-semibold">Skills</a></li>
+        <li class="active"><a href="#intership"
+            class="block text-base px-2 py-4 text-black dark:text-white font-semibold">Intership/Projects</a></li>
+        <li class="active"><a href="#testimonial"
+            class="block text-base px-2 py-4 text-black dark:text-white font-semibold">Testimonials</a></li>
+        <li class="active"><a href="#contact"
+            class="block text-base px-2 py-4 text-black dark:text-white font-semibold">Contact</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header End -->
+
+  <!-- Hero Start -->
+  <section class="text-black body-font">
+    <div class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center  ">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ">
+        <h1 class="title-font sm:text-4xl md:text-8xl mb-4 font-medium text-gray-900 dark:text-white">
+          Devaraj Badiger
+        </h1>
+        <p class="mb-8 leading-relaxed dark:text-gray-100 mt-2">
+          I am a professional frontend and graphic designer based in India. I am studing in K.L.S GIT College in a degree of Mechanical Engineering. I am passionate about both UI/UX and Development. I'm open to talking about new projects you have in mind.
+        </p>
+
+        <a href="https://drive.google.com/file/d/1P7CJvntmXwAsP4VZiFLrKucU0oZuqiX5/view?usp=sharing" target="_blank"
+          class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg dark:text-white">
+          Download CV
+        </a>
+
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="/dist/assets/heroimg.7bc6e250.png" />
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+  <!-- Education start -->
+
+  <section id="education" class="text-black body-font">
+    <h1 class="sm:text-4xl text-5xl mt font-medium text-center title-font mb-2 mt-16 text-gray-900 dark:text-white origin-top">
+      Education</h1>
+    <div class="container px-5 py-16  mx-auto flex flex-wrap">
+      <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+        <img alt="feature" class="object-cover object-center h-full w-full"
+          src="https://source.unsplash.com/random/460×500/?education">
+      </div>
+      <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+        <div class="flex flex-col mb-10 lg:items-start items-center">
+          <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+            </svg>            
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-xl title-font font-medium mb-3 dark:text-white uppercase">Secondary School
+              Leaving Certificate</h2>
+            <p class="leading-relaxed text-lg dark:text-gray-100 ">Government High School Nayanagar  Tq:Bailhongal Dis:Belagavi </p>
+            <a href="" class="mt-3 text-blue-500 inline-flex items-center">92%
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col mb-10 lg:items-start items-center">
+          <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+            </svg>
+            
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-xl title-font font-medium mb-3 dark:text-white uppercase">Pre-University
+              Course</h2>
+            <p class="leading-relaxed text-lg dark:text-gray-100">K.L.E. Society’s Raja Lakhamagouda Science P U college Belagavi Tq:Belagavi Dis:Belagavi</p>
+            <a class="mt-3 text-blue-500 inline-flex items-center">82.5%
+              
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col mb-10 lg:items-start items-center">
+          <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-black">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+            </svg>            
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-xl title-font font-medium mb-3 dark:text-white uppercase">Bachelor of
+              Engineering in Mechanical</h2>
+            <p class="leading-relaxed text-lg dark:text-gray-100">K.L.S Gogte Institute of Technology, Belagavi Tq:Belagavi Dis:Belagavi</p>
+            <a class="mt-3 text-blue-500 inline-flex items-center">7.88 (CGPA)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Education end -->
+  <!-- Skill start -->
+  <section id="skills" class="text-black body-font">
+    <div class="container px-5 py-16 mx-auto">
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+        <h1 class="sm:text-4xl text-5xl font-medium title-font mb-2  text-gray-900 dark:text-white ">Skills</h1>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <img class="w-7 h-fit" src="/dist/assets/003-layer.e2b034df.png" alt="frontlogo">
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2 dark:text-white">Frontend Development</h2>
+            <p class="leading-relaxed text-base dark:text-gray-100">Builds the front-end portion of websites and web applications.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <img class="w-6 h-fit" src="/dist/assets/002-user-experience.1da0bd22.png" alt="uxlogo">
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2 dark:text-white">UI/UX</h2>
+            <p class="leading-relaxed text-base dark:text-gray-100">Responsible for applying interactive and visual design principles on websites.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <img class="w-6 h-fit" src="/dist/assets/004-crop.d6dc8b8c.png" alt="graphicslogo">
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2 dark:text-white">Graphic Designer</h2>
+            <p class="leading-relaxed text-base dark:text-gray-100">Professional within the graphic design and graphic arts industry.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <img class="w-7 h-fit" src="/dist/assets/001-atom.024b916a.png" alt="reactlogo">
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2 dark:text-white">React Js</h2>
+            <p class="leading-relaxed text-base dark:text-gray-100">A free and open-source front-end JavaScript library for building UI.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <img class="w-6 h-fit" src="/dist/assets/005-coding.8bdfa5de.png" alt="appdevlogo">
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2 dark:text-white">App Development</h2>
+            <p class="leading-relaxed text-base dark:text-gray-100">A Develeoper who designs, creates, tests, programs and updates applications.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-4">
+              <img class="w-6 h-fit" src="/dist/assets/steering-wheel.8b46b418.png" alt="catialogo">
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2 dark:text-white">Catia</h2>
+            <p class="leading-relaxed text-base dark:text-gray-100">It's much more than a CAD (Computer Aided Design) software package.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Skill end -->
+  <!-- internship/projects start -->
+  <section id="intership" class="body-font">
+    <h1 class="sm:text-4xl text-5xl mt font-medium text-center title-font mb-2 mt-10 text-gray-900 dark:text-white ">
+      Intership/Projects</h1>
+    <div class="container px-5 py-16 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/720×400/?industry" alt="indusryimage">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium dark:text-gray-300 mb-1">Intership</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white">Dia and Pattern Making</h1>
+              <p class="leading-relaxed mb-3 dark:text-gray-100">I have learned casting process and tools that are used for casting industry and catia software for 3rd model.</p>
+              <div class="flex items-center flex-wrap cursor-pointer ">
+                <a href="https://drive.google.com/file/d/1S8vA2euBEy4rlXDy7OJkTBdqT5FGLw0D/view?usp=sharing" target="_blank"
+                class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/721×401/?artificialintelligence
+            " alt="aiimage">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium dark:text-gray-300  mb-1">Project</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 dark:text-white mb-3">AI Base Project</h1>
+              <p class="leading-relaxed mb-3 dark:text-gray-100">I have build an Artificial Intelligence React News Application using Alan AI. It is a revolutionary speech recognition software</p>
+              <div class="flex items-center flex-wrap cursor-pointer">
+                <a href="https://alanianews.netlify.app/" target="_blank"
+                class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3">
+          <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/722×402/?water" alt="waterimage">
+            <div class="p-6">
+              <h2 class="tracking-widest text-xs title-font font-medium dark:text-gray-300 mb-1">Project</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white">RO Survey</h1>
+              <p class="leading-relaxed mb-3 dark:text-gray-100">A RO Plants survey hosted by NSS, under the name Govt of Karnataka,Investiged RO plants around district.</p>
+              <div class="flex items-center flex-wrap cursor-pointer">
+                <a href="https://drive.google.com/file/d/1JAqHYH7nOu9t-TVBmbzyfFUz_A8Fegiu/view?usp=sharing" target="_blank" class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- second row -->
+        <div class="container px-5 py-24 mx-auto -mt-16">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/720×400/?website" alt="websiteimage">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium dark:text-gray-300 mb-1">Project</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white">Website</h1>
+                  <p class="leading-relaxed mb-3 dark:text-gray-100">I have built a website for Expert class which is computer coaching center, which help for education business.</p>
+                  <div class="flex items-center flex-wrap cursor-pointer">
+                    <a href="https://expertclass.netlify.app/" target="_blank"
+                    class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/721×401/?graphic" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium dark:text-gray-300 mb-1">Freelancing</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white">Graphic Designer</h1>
+                  <p class="leading-relaxed mb-3 dark:text-gray-100">Currently working as Graphic Designer at Papaya Coders, as of now built 25+ SocialMedia posts and stroies.</p>
+                  <div class="flex items-center flex-wrap cursor-pointer">
+                    <a href="https://www.instagram.com/papayacoders/" target="_blank"
+                    class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://source.unsplash.com/random/722×402/?apps" alt="blog">
+                <div class="p-6">
+                  <h2 class="tracking-widest text-xs title-font font-medium dark:text-gray-300 mb-1">Project</h2>
+                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3 dark:text-white">App Development</h1>
+                  <p class="leading-relaxed mb-3 dark:text-gray-100">I have built two apps(admin and Users) for any college or school, with many features. </p>
+                  <div class="flex items-center flex-wrap cursor-pointer">
+                    <a href="https://drive.google.com/file/d/1F23GPNxcb8VgGusbssWAhExynAe4HLb7/view?usp=sharing" target="_blank"
+                    class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0 ">Learn More
+                      <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  </section>
+  <!-- internship/projects end -->
+  <!-- Testimonials Start -->
+  <section id="testimonial" class="text-black body-font">
+    <h1 class="sm:text-4xl text-5xl font-medium text-center title-font mb-2  text-gray-900 dark:text-white">
+      Testimonials</h1>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block" src="/dist/assets/client.8c50ec52.png">
+            <p class="leading-relaxed dark:text-gray-100">Our first time working on a project together. very pleased with the outcome. communication is clear and the work is to the standard I would have hoped. Raj were happy to fix a couple revisions where requested in a speedy Manor.</p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm dark:text-white uppercase">Praveen Hiremath</h2>
+            <p class="text-gray-500 dark:text-gray-100">Teacher at Expert Class</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block" src="/dist/assets/clientshruti.b36aadc9.jpeg">
+            <p class="leading-relaxed dark:text-gray-100">This guy provided a very high-quality service and delivered an exceptionally high standard of work. He was very responsive throughout the entire process and was willing to go above and beyond to meet requirements.</p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm dark:text-white uppercase">Shruti</h2>
+            <p class="text-gray-500 dark:text-gray-100">B Tech</p>
+          </div>
+        </div>
+        <div class="lg:w-1/3 lg:mb-0 p-4">
+          <div class="h-full text-center">
+            <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block" src="/dist/assets/clientpapaya.fe563735.png">
+            <p class="leading-relaxed dark:text-gray-100">We used his service for our instagram page. He did very attractive and engaging designes for our page.Very creative and assists with my many revisions even as I change my mind!. Highly recommended</p>
+            <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-6 mb-4"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm dark:text-white uppercase">Shubham Pandey</h2>
+            <p class="text-gray-500 dark:text-gray-100">YouTuber</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials end -->
+  <!-- Contact start -->
+  <section id="contact" class="text-black body-font relative">
+    <h1 class="sm:text-4xl text-5xl mt font-medium text-center title-font mb-2 text-gray-900 dark:text-white">
+      Contact</h1>
+    <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+      <div class="lg:w-2/3 md:w-1/2 bg-gray-100 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.7908291149133!2d74.48501071485526!3d15.81497958903842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf65c556d2f08f%3A0xcbbcbb73e1286392!2sKLS%20Gogte%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1664632178349!5m2!1sen!2sin" style="filter: grayscale(0.5) contrast(1) opacity(0.8);"></iframe>
+        <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md ">
+          <div class="lg:w-1/2 px-6">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+            <p class="mt-1">Udyambag Industrial Area, Udyambag, Belagavi, Karnataka 590006</p>
+          </div>
+          <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+            <a class="text-blue-500 leading-relaxed">devarajbadiger618@gmail.com</a>
+            <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+            <p class="leading-relaxed">+91-8867733785</p>
+          </div>
+        </div>
+      </div>
+      <form id="contactForm" class="lg:w-2/5 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 p-4 md:mt-0">
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font uppercase">Contact</h2>
+        <p class="leading-relaxed mb-5 text-black">Are easy to find, so a visitor can quickly get in touch with you.</p>
+        <div class="text-white hidden bg-blue-500 border-0 py-2 px-6 rounded text-lg text-center" id="alert" >Your message has been sent</div>
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-black">Name</label>
+          <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-black">Email</label>
+          <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+        </div>
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-black">Message</label>
+          <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
+        </div>
+        <button type="submit" class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Send</button>
+      </form>
+    </div>
+  </section>
+  <!-- Contact end -->
+  <hr>
+  <!-- Footer start -->
+  <footer class="body-font ">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="/dist/assets/logo.2f75a4b7.png" alt="Logo" class="h-8 w-8 mr-2">
+        <span class="font-semibold text-black text-xl uppercase dark:text-white">Raj.Dev</span>
+      </a>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start text-black cursor-pointer">
+        <a href="https://www.facebook.com/profile.php?id=100014307876739" target="_blank" class="dark:text-white hover:text-gray-500 dark:hover:text-gray-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/Rajdev09" target="_blank" class="ml-3 dark:text-white hover:text-gray-500 dark:hover:text-gray-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/_devarajbadiger_/" target="_blank" class="ml-3 dark:text-white hover:text-gray-500 dark:hover:text-gray-400">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/devaraj-badiger-a0abb8201/" target="_blank" class="ml-3 dark:text-white hover:text-gray-500 dark:hover:text-gray-400">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+      <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="animate-bounce ml-3 inline-block p-2 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5" id="btn-back-to-top">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+      </button>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+</body>
+</html>
